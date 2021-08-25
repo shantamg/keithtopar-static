@@ -1,0 +1,82 @@
+*,
+header ul {
+	margin: 0;
+	padding: 0
+}
+
+#contact,
+#home {
+	text-align: center
+}
+
+body {
+	font-family: Montserrat, sans-serif;
+	color: #667726
+}
+
+main {
+  padding-top: 4em;
+	-webkit-transition: opacity .6s ease, -webkit-transform .6s ease;
+	transition: opacity .6s ease, -webkit-transform .6s ease;
+	transition: transform .6s ease, opacity .6s ease;
+	transition: transform .6s ease, opacity .6s ease, -webkit-transform .6s ease;
+	-webkit-transition-delay: .2s;
+	transition-delay: .2s
+}
+
+main.loading {
+	-webkit-transition: opacity 250ms ease, -webkit-transform 250ms ease;
+	transition: opacity 250ms ease, -webkit-transform 250ms ease;
+	transition: transform 250ms ease, opacity 250ms ease;
+	transition: transform 250ms ease, opacity 250ms ease, -webkit-transform 250ms ease;
+	-webkit-transition-delay: 0;
+	transition-delay: 0
+}
+
+main.intro,
+main.loading {
+	-webkit-transform: translateY(10px);
+	transform: translateY(10px);
+	opacity: 0
+}
+
+#home {
+	background-image: url(../img/logo.png);
+	max-width: 400px;
+	min-height: 397px;
+	margin: 0 auto;
+	background-size: 200px;
+	background-repeat: no-repeat;
+	background-position: center
+}
+
+#home h1 {
+	font-size: 3em;
+	line-height: 1em;
+	font-weight: 600
+}
+
+#home .hr {
+	width: 100px;
+	margin: 27px auto 20px;
+	border-bottom: 1px solid #667726
+}
+
+#home h2 {
+	font-size: 2.1em;
+	margin-top: 291px;
+	font-weight: 400
+}
+
+#contact {
+	margin-bottom: 2em
+}
+
+#loading {
+	background: url(/img/loading.gif) center no-repeat;
+	height: 600px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0
+}
